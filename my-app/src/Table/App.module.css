@@ -1,0 +1,54 @@
+
+.box {
+  display: inline-block;
+  background-color: #f1f1f1;
+  border: 2px solid #000000;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+.Divstatus 
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+}
+.popup {
+  display: block;
+  position: absolute;
+  background-color: rgb(78, 78, 78); /* Затемнение фона */
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000; /* Поверх всех элементов */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.StatusCircle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media queries для адаптации стилей под разные устройства */
+@media (max-width: 768px) {
+  .popup {
+    width: 90%; /* При необходимости, можно уменьшить ширину для мобильных устройств */
+  }
+}
